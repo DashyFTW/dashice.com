@@ -1,0 +1,404 @@
+/*PLAYER STYLING*/
+/**/
+#player-wrapper {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%; height: 5em;
+
+    background: -moz-linear-gradient(top,  rgba(219,219,219,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(219,219,219,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(219,219,219,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    -webkit-box-shadow: 0px -20px 20px 5px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px -20px 20px 5px rgba(0,0,0,0.05);
+    box-shadow: 0px -20px 20px 5px rgba(0,0,0,0.05);
+    z-index: 9;
+}
+
+#media-controls-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#media-progress {
+    display: flex;
+    height: 0.3em;
+    background-color: rgb(200, 200, 200);
+}
+
+#current-progress {
+    width: 0;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#media-elements {
+    display: flex;
+    flex: 1;
+}
+
+#player-cover-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 5em; height: auto;
+}
+
+#player-cover {
+    width: inherit;
+    pointer-events: none;
+}
+
+#player-cover-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#player-preloader {
+    height: 55%;
+}
+
+.player-flex-space {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player-volume-icon {
+    display: none;
+    height: 0.8cm; width: 0.8cm; /*Originally 3em*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+
+#player-volume-icon:hover {
+    cursor: pointer;
+}
+
+#player-volume-icon:active {
+    filter: invert(0.2);
+}
+
+#player-volume-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    
+    /*NOTICE THUMB HEIGHTS / WIDTHS originally 1.5em*/
+}
+
+#player-volume-slider {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    max-width: 12.5em; width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+    height: 2em;
+}
+
+#player-volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25), 0px 0px 2px rgba(0, 0, 0, 0.4);
+    height: 0.5cm; margin-top: -0.2cm;
+    width: 0.5cm;
+    border-radius: 1000px;
+    background: white;
+    cursor: pointer;
+}
+
+#player-volume-slider:active::-webkit-slider-thumb {
+    background-color: rgb(200, 200, 200);
+}
+
+#player-volume-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.4em;
+    cursor: pointer;
+    background: rgb(90, 90, 90);
+    border-radius: 1000px;
+}
+
+#player-volume-slider:focus::-webkit-slider-runnable-track {
+    outline: none;
+    background-color: dodgerblue;
+}
+
+/* All the same stuff for Firefox */
+#player-volume-slider::-moz-range-thumb {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25), 0px 0px 2px rgba(0, 0, 0, 0.4);
+    border: none;
+    height: 0.5cm; margin-top: -0.2cm;
+    width: 0.5cm;
+    border-radius: 1000px;
+    background: white;
+    cursor: pointer;
+}
+
+#player-volume-slider:active::-moz-range-thumb {
+    background-color: rgb(200, 200, 200);
+}
+
+#player-volume-slider::-moz-range-track {
+    width: 100%;
+    height: 0.4em;
+    cursor: pointer;
+    background: rgb(90, 90, 90);
+    border-radius: 1000px;
+}
+
+#player-volume-slider:focus::-moz-range-track {
+    background-color: dodgerblue;
+    outline: none;
+}
+
+/* All the same stuff for IE */
+#player-volume-slider::-ms-thumb {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25), 0px 0px 2px rgba(0, 0, 0, 0.4);
+    border: none;
+    height: 0.5cm;
+    width: 0.5cm;
+    margin-top: 0;
+    border-radius: 1000px;
+    background: white;
+    cursor: pointer;
+}
+
+#player-volume-slider:active::-ms-thumb {
+    background-color: rgb(200, 200, 200);
+}
+
+#player-volume-slider::-ms-track {
+    width: 8.5em;
+    height: 0.2em;
+    cursor: pointer;
+    background: rgb(90, 90, 90);
+    border-radius: 1000px;
+}
+
+#player-volume-slider::-ms-fill-lower {
+    background: none;
+    border: none;
+    border-radius: 1000px;
+}
+
+#player-volume-slider:focus::-ms-fill-lower {
+    background: none;
+    background-color: dodgerblue;
+}
+
+#player-volume-slider::-ms-fill-upper {
+    background: none;
+    border: none;
+    border-radius: 1000px;
+}
+
+#player-volume-slider:focus::-ms-fill-upper {
+    background: none;
+    background-color: dodgerblue;
+}
+
+#player-volume-slider:focus {
+    outline: none;
+}
+
+#player-tracker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25em; min-width: 15em;
+    height: auto;
+    overflow: hidden;
+}
+
+#player-title {
+    margin: 0 0 0.1em 0;
+    font-size: 1.1em;
+    color: rgb(90, 90, 90);
+    
+    cursor: default;
+}
+
+#player-artist {
+    margin: 0;
+    font-size: 0.85em;
+    color: rgb(120, 120, 120);
+
+    cursor: default;
+}
+
+.player-duration-wrapper {
+    width: 3.5em; min-width: 3.5em;
+    height: auto;
+}
+
+.player-duration {
+    padding: 0;
+    margin-top: 0.35em;
+    text-align: center;
+    font-size: 0.85em;
+    color: rgb(120, 120, 120);
+    
+    cursor: default;
+}
+
+#total-duration {
+    display: none;
+}
+
+#player-media-controls {
+    min-width: 10.2em;
+}
+
+.player-control {
+    position: relative;
+    top: 1.3em;
+    height: 2em;
+    margin-right: 0.6em; margin-left: 0.6em;
+    
+    /*Prevents highlighting of text*/
+    user-drag: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+.player-control:hover {
+    cursor: pointer;
+}
+
+.player-control:active {
+    filter: invert(0.2);
+}
+
+.player-options {
+    display: flex;
+    width: 5.5em; min-width: 5.5em;
+    height: auto;
+}
+
+.player-option-button {
+    flex: 1;
+    height: 3em;
+    margin-bottom: auto; margin-top: auto;
+    
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(120, 120, 120);
+    font-weight: bolder;
+    font-size: 0.85em;
+}
+
+.player-option-button:hover {
+    cursor: pointer;
+}
+
+.player-option-button:active {
+    background-color: rgb(190, 190, 190);
+    color: rgb(50, 50, 50);
+    -webkit-appearance: none;
+}
+
+.player-option-button:focus {
+    background-color: crimson;
+    color: white;
+}
+
+.toggled-option-button {
+    background-color: dodgerblue;
+    color: rgb(250, 250, 250);
+}
+
+.toggled-option-button:active {
+    background-color: rgb(21, 100, 178);
+    color: rgb(250, 250, 250);
+}
+
+#play-button {
+    display: none;
+}
+
+@media (max-width : 1280px) {
+    #player-volume-wrapper {
+        display: none;
+        position: absolute;
+        left: calc(50% + 15em); transform: translateX(-50%);
+    }
+    
+    #player-volume-icon {
+        display: block;
+    }
+}
+
+@media (max-width : 1080px) {
+    #player-volume-icon {
+        display: none;
+        height: 2.75em; width: 2.75em;
+    }
+    
+    #player-volume-wrapper {
+        display: flex;
+        position: static;
+        transform: translateX(0);
+    }
+    
+    #player-tracker {
+        display: none;
+    }
+    
+    .player-option-button {
+        height: 2.5em;
+    }
+    
+    #player-media-controls {
+        min-width: 8em;
+    }
+    
+    .player-control {
+        top: 1.45em;
+        height: 1.75em;
+        margin-right: 0.35em; margin-left: 0.35em;
+    }
+}
+
+@media (max-width : 850px) {
+    #player-volume-icon {
+        display: flex;
+    }
+    
+    #player-volume-wrapper {
+        display: none;
+        position: absolute;
+        left: calc(50% + 2.5em); transform: translateX(-50%);
+    }
+}
+
+@media (max-width : 636px) {
+    .player-options {
+        display: none;
+    }
+}
+
+@media (max-width : 414px) {
+    #player-volume-icon, #player-volume-wrapper {
+        display: none;
+    }
+}

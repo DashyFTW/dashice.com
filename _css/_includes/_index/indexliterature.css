@@ -1,0 +1,211 @@
+#literature-backdrop {
+    position: fixed;
+    left: 0; top: 0;
+    height: 100%; width: 100%;
+    background-image: url(../../../_images/_index/literature-backdrop.png);
+    z-index: -1;
+}
+
+#literature-article {
+    height: 300vh;
+}
+
+.literature-cards {
+    position: fixed;
+    top: 100vh; /*Modified in JS*/
+    height: calc(100vh - 8em);
+    max-width: 41em; width: calc(100% - 1em);
+    margin-top: 1em;
+    
+    /*Fixes centering bug Sierra Safari and earlier*/
+    right: 0; left: 0;
+    margin-right: auto; margin-left: auto;
+    
+    border-radius: 10px;
+    background-color: white;
+    
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.30);
+}
+
+#literature-card-1 {
+    display: flex;
+    flex-direction: column;
+
+    z-index: 2;
+}
+
+#literature-card-1 > div {
+    margin-top: 15%; margin-bottom: 15%;
+    height: 50%;
+    background-image: url(../../../_images/_index/literature-egyptian.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#literature-card-1 > h1 {
+    margin: 0;
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+}
+
+#literature-card-2 {
+    transform: scale(0.8); /*Modified in JS*/
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0); /*Modified in JS*/
+    -moz-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0); /*Modified in JS*/
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0); /*Modified in JS*/
+    
+    z-index: 1;
+}
+
+#literature-card-2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%; width: 100%;
+    
+    white-space: pre-wrap;
+}
+
+#literature-card-2 > div > p {
+    padding: 1em;
+    border-left: 0.3em solid black;
+}
+
+.literature-title {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#literature-article > a {
+    display: block;
+    position: fixed;
+    
+    top: calc(50% - 1.2em); transform: translateY(-50%);
+    left: 50%; transform: translateX(-50%);
+    
+    max-width: 15em; width: 50%;
+    padding: 0.25em 2em 0.25em 2em;
+    
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 0.1em solid black;
+    border-radius: 10px;
+    opacity: 0; /*Modified in JS*/
+    
+    z-index: 0;
+}
+
+#literature-article > a:active {
+    background-color: black;
+    color: white;
+    filter: opacity(0.5);
+}
+
+@media (max-width : 490px) {
+    #literature-card-1 > div {
+        margin-top: 10%; margin-bottom: 10%;
+        height: 65%;
+    }
+
+    #literature-card-1 > h1 {
+        font-size: 3em;
+    }
+
+    .literature-title {
+        margin-bottom: 0.5em;
+        font-size: 2em;
+    }
+
+    #literature-article > a {
+        font-size: 1.25em;
+        font-weight: 400;
+    }
+}
+
+@media (max-width : 350px) {
+    #literature-card-1 > div {
+        margin-top: 10%; margin-bottom: 10%;
+        height: 70%;
+    }
+
+    #literature-card-1 > h1 {
+        font-size: 2.5em;
+    }
+
+    .literature-title {
+        margin-bottom: 0.5em;
+        font-size: 1.75em;
+    }
+    
+    #literature-card-2 > div > p {
+        font-size: 0.85em;
+    }
+
+    #literature-article > a {
+        font-size: 1.15em;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    #literature-card-1 {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #literature-card-1 > div {
+        height: 100%; flex: 1;
+        margin: 0;
+    }
+    
+    #literature-card-1 > h1 {
+        flex: 1;
+        font-size: 3em;
+    }
+    
+    .literature-title {
+        margin-bottom: 0.5em;
+        font-size: 1.75em;
+    }
+    
+    #literature-card-2 > div > p {
+        font-size: 0.85em;
+    }
+
+    #literature-article > a {
+        font-size: 1.15em;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 568px) and (orientation : landscape) {
+    #literature-card-1 > h1 {
+        flex: 1;
+        font-size: 2em;
+    }
+    
+    .literature-title {
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+    }
+    
+    #literature-card-2 > div > p {
+        font-size: 0.75em;
+    }
+
+    #literature-article > a {
+        font-size: 1.15em;
+        font-weight: 400;
+    }
+}

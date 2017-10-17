@@ -1,0 +1,286 @@
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+#header-wrapper {
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+}
+
+#content {
+    margin-top: 3.75em!important;
+    margin-left: auto; margin-right: auto;
+    max-width: 603px; width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.20em 0 0.20em 0;
+}
+
+.image-frame {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5em;
+    position: relative;
+    
+    border: 0.1em solid rgb(230, 230, 230);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+}
+
+.image-heading-wrapper {
+    min-height: 3em;
+    border-bottom: 0.075em solid rgb(240, 240, 240);
+}
+
+.image-heading-wrapper > h2 {
+    margin: 0.25em;
+    
+    font-size: 1.75em;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(75, 75, 75);
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    max-height: 640px;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    
+    background-color: rgb(255, 255, 255);
+}
+
+.image > img {
+    max-height: 600px;
+    width: 100%;
+}
+
+.image > .tall {
+    width: auto; height: 640px;
+    max-width: 100%; max-height: 640px;
+}
+
+.image-frame-image, .image-frame-og-image {
+    position: relative;
+    /*Fixes centering bug Sierra Safari and earlier*/
+    right: 0; left: 0;
+    margin-right: auto; margin-left: auto;
+}
+
+.image-frame-image {
+    opacity: 1;
+}
+
+.image-frame-og-image {
+    position: absolute;
+    opacity: 0;
+}
+
+.image-moreinfo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    min-height: 3em;
+    border-top: 0.075em solid rgb(240, 240, 240);
+}
+
+.og-nav-button {
+    height: 1.5em; width: 1.5em;
+    
+    position: absolute;
+    top: 0.75em;
+    border-radius: 1000px;
+    opacity: 0.2;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.og-nav-button:hover {
+    cursor: pointer;
+}
+
+.og-nav-button:active {
+    opacity: 0.4;
+}
+
+.prev-button {
+    background-image: url(../_images/prev-picture.png);
+    left: 1em;
+    display: none;
+}
+
+.next-button {
+    background-image: url(../_images/next-picture.png);
+    right: 1em;
+}
+
+.moreinfo-button-wrapper {
+    display: none;
+    margin: 0;
+    min-height: 3em;
+    width: 3em;
+    
+    background-color: transparent;
+    background-image: url(../_images/info-button.png);
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position: center;
+    
+    border: none;
+    font-size: 1em;
+}
+
+.moreinfo-button-wrapper:hover {
+    cursor: pointer;
+}
+
+.moreinfo-button-wrapper:focus {
+    outline: none;
+    filter: hue-rotate(135deg)brightness(80%)saturate(200%);
+}
+
+.moreinfo-button-wrapper:active {
+    outline: none;
+    filter: brightness(80%);
+}
+
+.moreinfo-text-wrapper {
+    width: calc(100% - 4em);
+    margin: 1em;
+    padding: 0 1em 0.15em 1em;
+    
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.moreinfo-text-wrapper h3 {
+    margin-top: 0.85em;
+    color: rgb(75, 75, 75);
+}
+
+.moreinfo-text-wrapper > p {
+    margin-top: -0.25em;
+    
+    text-align: justify;
+    font-style: italic;
+    color: rgb(120, 120, 120);
+}
+
+hr {
+    margin: 1.25em 0 1.25em 0;
+    width: 85%;
+    height: 1px;
+    
+    border: 0px solid #000;
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, rgb(180, 180, 180), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgb(180, 180, 180), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgb(180, 180, 180), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgb(180, 180, 180), rgba(0, 0, 0, 0)); 
+}
+
+.moreinfo-text-wrapper > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreinfo-text-wrapper > div > a {
+    display: block;
+    max-width: 12.5em; width: 100%;
+    
+    height: 1.75em;
+    margin: -0.5em 1em -0.5em 1em;
+    padding-top: 0.45em;
+    
+    border: 0.1em solid transparent;
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+    color: dodgerblue;
+    font-weight: bolder;
+    font-size: 0.85em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.moreinfo-text-wrapper > div > a:focus {
+    color: crimson;
+    outline: none;
+}
+
+.moreinfo-text-wrapper > div > a:active {
+    background-color: rgb(235, 235, 235);
+    color: rgb(24, 115, 204);
+}
+
+.moreinfo-text-wrapper > div > a.selected {
+    border-color: dodgerblue;
+}
+
+.moreinfo-text-wrapper > div > a.selected:focus {
+    border-color: crimson;
+}
+
+.moreinfo-text-wrapper > div > a.selected:active {
+    border-color: rgb(24, 115, 204);
+}
+
+.moreinfo-text-wrapper > .moreinfo-meta {
+    font-style: normal;
+    font-size: 0.85em;
+    color: rgb(160, 160, 160);
+}
+
+@media (max-width : 600px) {
+    .image-frame {
+        border-radius: 0;
+        border-left: none; border-right: none;
+    }
+    
+    /*Fixes a visual bug*/
+    .image {
+        max-height: none;
+    }
+    
+    .image > img {
+        width: 100vw;
+        max-height: 100vw;
+    }
+    
+    .image > .tall {
+        width: 100%; height: auto;
+        max-height: none;
+    }
+}
+
+@media (max-width : 490px) {
+    body {
+        background-color: rgb(245, 245, 245);
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    .image-frame {
+        width: 60%;
+        margin-left: auto; margin-right: auto;
+    }
+}

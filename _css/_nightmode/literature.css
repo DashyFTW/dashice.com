@@ -1,0 +1,149 @@
+body {
+    background-color: #222;
+}
+
+h1 {
+    color: white;
+}
+
+#literature-sort-button {
+    color: rgb(220, 220, 220);
+    background-color: rgb(15, 15, 15);
+}
+
+#literature-sort-button:active {
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+#literature-sort-button > img {
+    filter: invert(1)opacity(0.9);
+}
+
+#literature-sort-button:active > img {
+    filter: invert(1)opacity(1);
+}
+
+#literature-filterlist {
+    background-color: rgb(15, 15, 15);
+}
+
+article {
+    position: relative;
+    border-top: 1px solid rgb(95, 95, 95);
+}
+
+.title {
+    color: white;
+}
+
+.title:focus {
+    color: crimson;
+}
+
+.title:focus:active {
+    color: rgb(227, 66, 98);
+}
+
+.title:active {
+    color: rgb(220, 220, 220);
+}
+
+.title-coauthors {
+    color: white;
+}
+
+.featured-button:active {
+    background-color: rgb(227, 66, 98);
+}
+
+.adult-button:active {
+    background-color: rgb(153, 50, 153);
+}
+
+.tag-wrapper {
+    background-color: rgb(15, 15, 15);
+}
+
+h3 {
+    color: white;
+}
+
+hr {
+    border: 0px solid #fff;
+    background-image: -webkit-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0)); 
+}
+
+.form-tag, .category-tag {
+    color: rgb(135, 135, 135);
+}
+
+.form-tag:active, .category-tag:active {
+    color: rgb(205, 205, 205);
+}
+
+.selected-tag {
+    color: crimson!important;
+}
+
+.selected-tag:active {
+    color: rgb(227, 66, 98)!important;
+}
+
+.read-button {
+    color: dodgerblue;
+}
+
+.read-button:active {
+    color: rgb(74, 166, 255);
+}
+
+#filter-bar-wrapper {
+    background-color: black;
+    border: 0.1em solid rgb(35, 35, 35);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+}
+
+#filter-bar-clear-button {
+    background-color: black;
+    color: dodgerblue;
+}
+
+#filter-bar-clear-button:active {
+    color: rgb(74, 166, 255);
+}
+
+.filter-bar-item {
+    border: 0.1em solid rgb(135, 135, 135);
+}
+
+.filter-bar-item:active {
+    border: 0.1em solid white;
+    background-color: white;
+}
+
+.filter-bar-item:active > .filter-bar-item-label {
+    color: black;
+}
+
+.filter-bar-item-label {
+    color: rgb(135, 135, 135);
+}
+
+/*Span formatting used in database*/
+.other-color {
+    color: rgb(105, 105, 105);
+}
+
+.other-color-two {
+    /*NOT IN USE*/
+}
+
+.other-color-three {
+    /*NOT IN USE*/
+}

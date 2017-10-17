@@ -1,0 +1,195 @@
+#mail-timeout-text {    
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+#content > form > h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.20em 0 0.20em 0;
+}
+
+.form-section-header {
+    max-width: 40em; width: 100%;
+    margin-left: auto; margin-right: auto;
+}
+
+.form-section-header > h2 {
+    margin: 0; padding: 0;
+    font-size: 1.75em;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+.form-input-wrapper {
+    display: flex;
+    border: 0.25em solid rgb(240, 240, 240);
+    height: 1.5em;
+    max-width: 40em;
+    margin: 1em auto 1em auto;
+    
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.form-input-wrapper > label {
+    display: block;
+    max-width: 12.5em; width: 100%;
+    padding-top: 0.2em;
+    
+    color: rgb(120, 120, 120);
+    font-size: 0.85em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-input-wrapper > label:active {
+    color: rgb(50, 50, 50);
+}
+
+.email-form-input {
+    display: block;
+    width: 100%; height: 100%;
+    padding: 0 1em 0 1em;
+    
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    font-size: 0.85em;
+}
+
+.email-form-input:focus {
+    background-color: aliceblue;
+}
+
+.form-message-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 0.25em solid rgb(240, 240, 240);
+    min-height: 4.5em;
+    max-width: 40em; width: 100%;
+    margin: 1em auto 1em auto;
+    
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.form-message-wrapper > label {
+    display: block;
+    width: 100%;
+    height: 1.75em;
+    padding-top: 0.25em;
+    
+    background-color: rgb(240, 240, 240);
+    color: rgb(120, 120, 120);
+    font-size: 0.85;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-message-wrapper > label:active {
+    color: rgb(50, 50, 50);
+}
+
+#message {
+    max-width: 100%;
+    min-height: 7.5em;
+    padding: 0.75em 1em 0.75em 1em;
+    margin: 0;
+    
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    font-size: 0.85em;
+    background-color: white;
+}
+
+#message:focus {
+    background-color: aliceblue;
+}
+
+#count {
+    width: 100%;
+    padding-bottom: 0; padding-top: 0.25em;
+    
+    font-size: 0.7em;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    color: rgb(150, 150, 150);
+}
+
+#email-form-final {
+    max-width: 40em; width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 1em 0 1em 0;
+    
+    border-top: 1px solid rgb(160, 160, 160);
+    text-align: right;
+}
+
+#form-send {
+    height: 2em; width: 12.5em;
+    
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 0.85em;
+    
+    background-color: dodgerblue;
+    color: rgb(250, 250, 250);
+}
+
+#form-send:active {
+    background-color: rgb(21, 100, 178);
+    color: rgb(250, 250, 250);
+}
+
+#form-send:focus {
+    background-color: crimson;
+    outline: none;
+}
+
+.error {
+    color: crimson;
+}
+
+label.error {
+    padding-top: 0.45em;
+    font-size: 0.7em;
+    color: crimson;
+}
+
+@media (max-width : 42.5em) {
+    #content > form {
+        padding-left: 1em; padding-right: 1em;
+    }
+}
+
+@media (max-width : 490px) {
+    #content > form > h1 {
+        font-size: 2.5em;
+    }
+
+    .form-section-header > h2 {
+        font-size: 1.5em;
+    }
+    
+    .form-input-wrapper > label {
+        max-width: 7.5em;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    
+}

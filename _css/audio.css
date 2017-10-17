@@ -1,0 +1,460 @@
+/*CONTENT STYLING*/
+/**/
+input {
+    -webkit-appearance: none;
+}
+
+#content {
+    flex-direction: row!important;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0.2em auto 0.20em auto;
+}
+
+main {
+    display: none;
+    flex: 1;
+    margin-left: auto; margin-right: auto;
+    max-width: 50em; width: 100%;
+}
+
+#sidebar-space {
+    display: none;
+    position: relative;
+    left: 0;
+    max-width: 25em; width: 100%;
+    height: 100%;
+}
+
+.sidebar-space-show {
+    display: block!important;
+}
+
+.track-frame {
+    display: flex;
+    flex-direction: column;
+    width: auto; height: auto;
+    margin-bottom: 5em;
+    
+    border-top: 1px solid rgb(160, 160, 160);
+}
+
+.track-id, .track-lyrics {
+    display: none;
+}
+
+.track-frame-flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.track-cover-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 1em;
+    width: 15em; height: 15em;
+}
+
+.cover {
+    margin: auto;
+    height: 12.7em; width: 12.7em;
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cover-blurred {
+    display: none;
+    position: absolute;
+    left: 0; right: 0;
+    top: 1.75em; bottom: 0;
+    margin: auto;
+    height: 92.5%; width: 95%;
+    pointer-events: none;
+    z-index: 0;
+    
+    filter: blur(15px)opacity(0.6)grayscale(0.2);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.track-cover-bottom {
+    margin-right: 1.5em;
+    width: 15em; height: auto;
+}
+
+.track-info-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-header {
+    padding-top: 0.78em;
+}
+
+.info-header > h2, .info-header > h3 {
+    margin-top: 0; margin-bottom: 0;
+    padding-left: 5px;
+}
+
+.info-header > h2 {
+    margin-left: -0.03em;
+    font-size: 1.75em;
+}
+
+.info-header > h3 {
+    padding-bottom: 3px;
+}
+
+.info-header-extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-header-extra > p {
+    flex: 1;
+    padding: 0.5em 5px 0 5px;
+    margin: 0;
+    
+    color: rgb(120, 120, 120);
+}
+
+.info-header-options {
+    display: flex;
+    width: 100%;
+    margin-top: 0.5em; padding-bottom: 1.25em;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.header-option-button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 12.75em;
+    height: 2em;
+    
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(120, 120, 120);
+    font-weight: bolder;
+    font-size: 0.85em;
+}
+
+.header-option-button:hover {
+    cursor: pointer;
+}
+
+.header-option-button:active {
+    background-color: rgb(190, 190, 190);
+    color: rgb(50, 50, 50);
+    -webkit-appearance: none;
+}
+
+.header-option-button:focus {
+    outline: none;
+    background-color: crimson;
+    color: white;
+}
+
+.lyrics-button {
+    margin-left: 0.6em;
+}
+
+.play-button {
+    background-color: dodgerblue;
+    color: rgb(250, 250, 250);
+}
+
+.play-button:active {
+    background-color: rgb(21, 100, 178);
+    color: rgb(250, 250, 250);
+}
+
+.download-button {
+    margin-left: 0.6em;
+    text-decoration: none;
+}
+
+.header-moreinfo-button {
+    width: 100%;
+    text-align: left;
+    margin-top: 1.15em;
+    font-size: 1em;
+    
+    background-color: transparent;
+    color: dodgerblue;
+    border: none;
+}
+
+.header-moreinfo-button:hover {
+    cursor: pointer;
+}
+
+.header-moreinfo-button:active {
+    color: rgb(21, 100, 178);
+    -webkit-appearance: none;
+}
+
+.header-moreinfo-button:focus {
+    outline: none;
+    color: crimson;
+}
+
+.track-moreinfo-wrapper {
+    display: none;
+    flex: 1;
+    padding: 0 1.5em 1.15em 1.5em;
+    margin: 0 0.2em 0 -0.35em;
+    
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.track-moreinfo-wrapper > hr {
+    margin: 1.25em 0 1.25em 0;
+    width: 85%;
+    height: 1px;
+    
+    border: 0px solid #000;
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, rgb(190, 190, 190), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgb(190, 190, 190), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgb(190, 190, 190), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgb(190, 190, 190), rgba(0, 0, 0, 0));
+}
+
+table {
+    width: 100%;
+    color: rgb(90, 90, 90);
+}
+
+td:nth-child(1) {
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    color: rgb(120, 120, 120);
+}
+
+.header-moreinfo-desc > p {
+    margin: 0;
+    color: rgb(120, 120, 120);
+}
+
+/*LYRICS STYLING*/
+/**/
+#lyrics-wrapper {
+    display: none;
+    position: fixed;
+    left: 0;
+    max-width: 25em; width: 100%;
+    height: calc(100vh - 2.5em);
+    
+    overflow-y: scroll;
+    white-space: pre-wrap;
+    z-index: 3;
+    
+    background-color: rgb(240, 240, 240);
+    
+    overflow-x: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+#lyrics-close-button {
+    display: block;
+    width: 100%; height: 2.5em;
+    margin-top: -2.25em;
+    font-size: 1em;
+    font-weight: bold;
+    
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 0;
+    color: rgb(250, 250, 250);
+    -webkit-appearance: none;
+}
+
+#lyrics-close-button:hover {
+    cursor: pointer;
+}
+
+#lyrics-close-button:active {
+    background-color: rgb(21, 100, 178);
+    -webkit-appearance: none;
+}
+
+#lyrics-close-button:focus {
+    outline: none;
+    background-color: crimson;
+}
+
+#lyrics-wrapper > h3 {
+    font-size: 1.5em;
+    color: rgb(50, 50, 50);
+    margin: 0 0.7em 0 0.7em; padding: 0;
+    
+    cursor: default;
+}
+
+#lyrics {
+    color: rgb(90, 90, 90);
+    margin: 0 1em 0 1em;
+    
+    cursor: default;
+}
+
+.toggled-lyrics-slideover {
+    display: block!important;
+}
+
+/*NO JAVASCRIPT*/
+/**/
+#no_js-wrapper {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: calc(100%);
+    margin-top: 2.5em;
+}
+
+#no_js-header {
+    margin-left: 1em; margin-right: 1em;
+    color: red;
+    text-align: center;
+}
+
+#no_js-paragraph {
+    margin-left: 1em; margin-right: 1em;
+    color: lightgray;
+    text-align: center;
+}
+
+#no_js-image {
+    display: block;
+    margin: auto;
+    width: 25%;
+    filter: opacity(0.7);
+    transition: 0.1s ease-out;
+}
+
+#no_js-image:hover {
+    filter: opacity(1);
+    transition: 0.2s ease-in;
+}
+
+@media (max-width : 1080px) {    
+    .track-frame {
+        margin-bottom: 0;
+    }
+    
+    .track-frame-flexrow-first {
+        flex-direction: column;
+    }
+    
+    .track-cover-wrapper {
+        margin: 0;
+        align-self: center;
+    }
+    
+    .track-cover-bottom {
+        width: 0;
+        margin: 0; padding: 0;
+    }
+    
+    .info-header {
+        padding-top: 1.5em;
+    }
+
+    .info-header > h2, .info-header > h3 {
+        padding: 0;
+    }
+
+    .info-header > h2 {
+        text-align: center;
+    }
+
+    .info-header > h3 {
+        text-align: center;
+    }
+
+    .info-header-extra > p {
+        text-align: center;
+    }
+    
+    .info-header-options {
+        justify-content: center;
+        
+        max-width: 30em;
+        padding-bottom: 0;
+        margin-left: auto; margin-right: auto;
+        border-bottom: none;
+    }
+    
+    .header-option-button {
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .track-moreinfo-wrapper {
+        border-radius: 0;
+        margin-left: auto; margin-right: auto;
+        padding: 0 1em 1em 1em;
+        max-width: 28em;
+    }
+    
+    .header-moreinfo-button {
+        display: block;
+        max-width: 30em;
+        margin-left: auto; margin-right: auto;
+        margin-bottom: 1.25em;
+        padding: 0;
+        text-align: right;
+    }
+    
+    #lyrics-wrapper {
+        width: 100%; max-width: none;
+    }
+}
+
+@media (max-width : 490px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    .header-moreinfo-button {
+        padding-right: 1em;
+    }
+    
+    #lyrics-wrapper > h3 {
+        margin: -0.5em 0.7em -0.5em 0.7em;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    #lyrics-wrapper > h3 {
+        margin: -0.5em 0.7em -0.5em 0.7em;
+    }
+    
+    #player-wrapper {
+        z-index: 2;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 930px) {
+    #lyrics {
+        margin-bottom: 4em;
+    }
+    
+    #lyrics-close-button {
+        margin-top: -2.6em;
+    }
+}

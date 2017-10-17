@@ -1,0 +1,226 @@
+#audio-article {
+    justify-content: center;
+    align-items: center;
+}
+
+#audio-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px; width: 100%;
+}
+
+#audio-content > hr {
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    
+    margin: 0;
+    width: 0%; /*Modified in JS*/
+    height: 0.1em;
+    
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+    opacity: 0; /*Modified in JS*/
+}
+
+#audio-video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 1px;
+    
+    position: relative;
+    
+    max-height: 300px;
+    overflow: hidden;
+}
+
+#audio-video-wrapper > video {
+    height: auto;
+    border: none;
+}
+
+#audio-video-wrapper > h1 {
+    position: absolute;
+    margin: 0;
+    
+    top: 1.55em;
+    
+    /*Fixes centering bug Sierra Safari and earlier*/
+    right: 0; left: 0;
+    margin-right: auto; margin-left: auto;
+    
+    text-align: center;
+    font-size: 6em;
+    color: crimson;
+}
+
+#audio-video-wrapper > h3 {
+    position: absolute;
+    margin: 0;
+    
+    margin-top: 3.6em;
+    
+    /*Fixes centering bug Sierra Safari and earlier*/
+    right: 0; left: 0;
+    margin-right: auto; margin-left: auto;
+    
+    text-align: center;
+    
+    color: white;
+}
+
+#audio-desc-wrapper {
+    opacity: 0; /*Modified in JS*/
+    margin: 0 0.5em 0 0.5em;
+}
+
+#audio-desc-wrapper > p {
+    display: block;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    max-width: 35em; width: 100%;
+    margin: 2.5em 0 2.5em 0;
+    
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#audio-desc-wrapper > a {
+    display: block;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    
+    width: 50%;
+    padding: 0.25em 2em 0.25em 2em;
+    
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 0.1em solid white;
+    border-radius: 10px;
+}
+
+#audio-desc-wrapper > a:active {
+    filter: brightness(0.9);
+}
+
+.audio-transition {
+    transition: 0.5s ease-in;
+}
+
+#audio-footer {
+    background: -moz-linear-gradient(top,  rgba(220,20,60,0) 0%, crimson 50%, crimson 80%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(220,20,60,0) 0%,crimson 50%,crimson 80%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(220,20,60,0) 0%,crimson 50%,crimson 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(220,20,60)', endColorstr='rgba(220,20,60)',GradientType=0 ); /* IE6-9 */
+}
+
+@media (max-width : 490px) {
+    #audio-article {
+        margin-bottom: 7.5em;
+    }
+    
+    #audio-video-wrapper > video {
+        height: 250px;
+    }
+    
+    #audio-video-wrapper > h1 {
+        top: 2em;
+        font-size: 4.5em;
+    }
+    
+    #audio-video-wrapper > h3 {
+        margin-top: 3.75em;
+    }
+    
+    #audio-desc-wrapper > p {
+        margin: 1.75em 0 1.75em 0;
+        font-size: 1.15em;
+    }
+    
+    #audio-desc-wrapper > a {
+        font-size: 1.25em;
+        font-weight: 400;
+    }
+}
+
+@media (max-width : 350px) {
+    #audio-video-wrapper > video {
+        height: 200px;
+    }
+    
+    #audio-video-wrapper > h1 {
+        top: 1.8em;
+        font-size: 4em;
+    }
+    
+    #audio-video-wrapper > h3 {
+        margin-top: 3.25em;
+    }
+    
+    #audio-desc-wrapper > p {
+        margin: 1.2em 0 1.2em 0;
+        font-size: 1em;
+    }
+    
+    #audio-desc-wrapper > a {
+        font-size: 1.15em;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    #audio-article {
+        margin-bottom: 7.5em;
+    }
+    
+    #audio-video-wrapper > video {
+        height: 200px;
+    }
+    
+    #audio-video-wrapper > h1 {
+        margin-top: 0.55em;
+        font-size: 3.5em;
+    }
+    
+    #audio-video-wrapper > h3 {
+        margin-top: 3.1em;
+    }
+    
+    #audio-desc-wrapper > p {
+        margin: 1.2em 0 1.2em 0;
+        font-size: 1.1em;
+    }
+    
+    #audio-desc-wrapper > a {
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 568px) and (orientation : landscape) {
+    #audio-video-wrapper > video {
+        height: 180px;
+    }
+    
+    #audio-video-wrapper > h1 {
+        margin-top: 0.2em;
+        font-size: 3.5em;
+    }
+    
+    #audio-video-wrapper > h3 {
+        margin-top: 2.6em;
+    }
+    
+    #audio-desc-wrapper > p {
+        margin: 1.2em 0 1.2em 0;
+        font-size: 1em;
+    }
+    
+    #audio-desc-wrapper > a {
+        font-size: 1.15em;
+    }
+}

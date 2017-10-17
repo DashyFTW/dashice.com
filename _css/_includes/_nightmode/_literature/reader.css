@@ -1,0 +1,74 @@
+.body-reader-bgcolor {
+    background-color: black;
+}
+
+#reader-wrapper {
+    background-color: #222;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255,0.75);
+    
+    z-index: 4;
+}
+
+.toolbar-button {
+    background-color: transparent;
+    border: 0.1em solid rgb(120, 120, 120);
+}
+
+.toolbar-button:enabled:active {
+    background-color: #444;
+}
+
+.toolbar-button:disabled:active {
+    background-color: transparent;
+}
+
+.toolbar-button:focus {
+    border-color: crimson;
+}
+
+.toolbar-button:disabled > span {
+    filter: brightness(75%)!important;
+}
+
+#toolbar-dark:disabled > span {
+    filter: brightness(50%)!important;
+}
+
+
+#toolbar-prev:enabled:active > span, #toolbar-next:enabled:active > span, #toolbar-smaller:enabled:active > span, #toolbar-larger:enabled:active > span, #toolbar-print:enabled:active > span, #toolbar-close:enabled:active > span {
+    filter: brightness(175%);
+}
+
+#toolbar-prev > span {
+    filter: brightness(140%);
+}
+
+#toolbar-next > span {
+    filter: brightness(140%);
+}
+
+#toolbar-smaller > span {
+    filter: brightness(140%);
+}
+
+#toolbar-larger > span {
+    filter: brightness(140%);
+}
+
+#toolbar-print > span {
+    filter: brightness(140%);
+}
+
+#toolbar-close > span {
+    filter: brightness(140%);
+}
+
+#reader-heading {
+    color: rgb(210, 210, 210);
+}
+
+#reader-body {
+    color: rgb(210, 210, 210);
+}

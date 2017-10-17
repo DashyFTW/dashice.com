@@ -1,0 +1,239 @@
+/*CONTENT STYLING*/
+/**/
+html, body {
+    background-color: #222;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    color: white;
+}
+
+.track-frame {
+    border-top: 1px solid rgb(110, 110, 110);
+}
+
+.cover-blurred {
+    filter: blur(15px)opacity(0.6)grayscale(0.2);
+}
+
+.info-header > h2, .info-header > h3 {
+    color: white;
+}
+
+.info-header-extra > p {
+    color: rgb(155, 155, 155);
+}
+
+.info-header-options {
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+.header-option-button {
+    background-color: rgb(15, 15, 15);
+    color: rgb(135, 135, 135);
+}
+
+.header-option-button:active {
+    background-color: rgb(65, 65, 65);
+    color: rgb(205, 205, 205);
+}
+
+.header-option-button:focus {
+    background-color: crimson;
+    color: black!important;
+}
+
+.play-button {
+    background-color: dodgerblue;
+    color: rgb(5, 5, 5);
+}
+
+.play-button:active {
+    background-color: rgb(74, 166, 255);
+    color: rgb(5, 5, 5);
+}
+
+.header-moreinfo-button {
+    color: dodgerblue;
+}
+
+.header-moreinfo-button:active {
+    color: rgb(74, 166, 255);
+}
+
+.track-moreinfo-wrapper {
+    background-color: rgb(15, 15, 15);
+}
+
+.track-moreinfo-wrapper > hr {
+    border: 0px solid #fff;
+    background-image: -webkit-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+}
+
+table {
+    color: rgb(165, 165, 165);
+}
+
+td:nth-child(2) {
+    color: rgb(135, 135, 135);
+}
+
+.header-moreinfo-desc > p {
+    color: rgb(135, 135, 135);
+}
+
+/*LYRICS STYLING*/
+/**/
+#lyrics-wrapper {
+    background-color: rgb(15, 15, 15);
+}
+
+#lyrics-wrapper > h3 {
+    color: rgb(205, 205, 205);
+}
+
+#lyrics {
+    color: rgb(165, 165, 165);
+}
+
+/*PLAYER STYLING*/
+/**/
+#player-wrapper {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbdbdb+0,ffffff+100&1+0,0+100 */
+    background: -moz-linear-gradient(top,  rgba(20,20,20,1) 0%, rgba(34,34,34,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(20,20,20,1) 0%,rgba(34,34,34,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(20,20,20,1) 0%,rgba(34,34,34,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+
+    -webkit-box-shadow: 0px -20px 20px 5px rgba(255,255,255,0.03);
+    -moz-box-shadow: 0px -20px 20px 5px rgba(255,255,255,0.03);
+    box-shadow: 0px -20px 20px 5px rgba(255,255,255,0.03);
+}
+
+#media-progress {
+    background-color: rgb(65, 65, 65);
+}
+
+#current-progress {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#player-volume-icon {
+    filter: invert(1);
+}
+
+#player-volume-icon:active {
+    filter: invert(0.8);
+}
+
+#player-volume-slider::-webkit-slider-thumb {
+    box-shadow: none;
+    background: rgb(200, 200, 200);
+}
+
+#player-volume-slider:active::-webkit-slider-thumb {
+    background: rgb(145, 145, 145);
+}
+
+#player-volume-slider::-webkit-slider-runnable-track {
+    background: rgb(120, 120, 120);
+}
+
+#player-volume-slider::-moz-range-thumb {
+    box-shadow: none;
+    background: rgb(200, 200, 200);
+}
+
+#player-volume-slider:active::-moz-range-thumb {
+    background: rgb(145, 145, 145);
+}
+
+#player-volume-slider::-moz-range-track {
+    background: rgb(120, 120, 120);
+}
+
+#player-volume-slider::-ms-thumb {
+    box-shadow: none;
+    background: rgb(200, 200, 200);
+}
+
+#player-volume-slider:active::-ms-thumb {
+    background: rgb(145, 145, 145);
+}
+
+#player-volume-slider::-ms-track {
+    background: rgb(120, 120, 120);
+}
+
+#player-title {
+    color: rgb(165, 165, 165);
+}
+
+#player-artist {
+    color: rgb(135, 135, 135);
+}
+
+.player-duration {
+    color: rgb(135, 135, 135);
+}
+
+.player-control {
+    filter: invert(1);
+}
+
+.player-control:active {
+    filter: invert(0.8);
+}
+
+.player-option-button {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgb(15, 15, 15);
+    color: rgb(135, 135, 135);
+}
+
+.player-option-button:active {
+    background-color: rgb(65, 65, 65);
+    color: rgb(205, 205, 205);
+}
+
+.player-option-button:focus {
+    outline: none;
+    background-color: crimson;
+    color: black;
+}
+
+.toggled-option-button {
+    background-color: dodgerblue;
+    color: rgb(5, 5, 5);
+}
+
+.toggled-option-button:active {
+    background-color: rgb(74, 166, 255);
+    color: rgb(5, 5, 5);
+}
+
+#lyrics-close-button {
+    background-color: dodgerblue;
+    color: rgb(5, 5, 5);
+}
+
+#lyrics-close-button:active {
+    background-color: rgb(74, 166, 255);
+}
+
+#lyrics-close-button:focus {
+    background-color: crimson;
+}
+
+@media (max-width : 912px) {    
+    .info-header-options {
+        border-bottom: none!important;
+    }
+}

@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+h1 {
+    color: white;
+}
+
+.image-frame {
+    border: 0.1em solid rgb(45, 45, 45);
+    background-color: rgb(20, 20, 20);
+}
+
+.image-heading-wrapper {
+    border-bottom: 0.075em solid rgb(38, 38, 38);
+}
+
+.image-heading-wrapper > h2 {
+    color: rgb(200, 200, 200);
+}
+
+.image {
+    background-color: rgb(20, 20, 20);
+}
+
+.image-moreinfo-container {
+    border-top: 0.075em solid rgb(38, 38, 38);
+}
+
+.prev-button {
+    background-image: url('../../_images/prev-picture-nightmode.png');
+}
+
+.next-button {
+    background-image: url('../../_images/next-picture-nightmode.png');
+}
+
+.moreinfo-button-wrapper:active {
+    filter: brightness(120%);
+}
+
+.moreinfo-text-wrapper {
+    background-color: rgb(10, 10, 10);
+}
+
+.moreinfo-text-wrapper > h3 {
+    color: rgb(200, 200, 200);
+}
+
+.moreinfo-text-wrapper > p {
+    color: rgb(135, 135, 135);
+}
+
+hr {
+    border: 0px solid #fff;
+    background-image: -webkit-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgb(130, 130, 130), rgba(0, 0, 0, 0)); 
+}
+
+.moreinfo-text-wrapper > div > a {
+    background-color: rgb(25, 25, 25);
+}
+
+.moreinfo-text-wrapper > div > a:active {
+    background-color: rgb(35, 35, 35);
+    color: rgb(74, 166, 255);
+}
+
+.moreinfo-text-wrapper > div > a.selected:active {
+    border-color: rgb(74, 166, 255);
+}
+
+.moreinfo-text-wrapper > .moreinfo-meta {
+    font-style: normal;
+    font-size: 0.85em;
+    color: rgb(95, 95, 95);
+}
+
+/*Fixes a visual bug*/
+@media (max-width : 640px) {
+    .image-frame {
+        border-left: none; border-right: none;
+    }
+}

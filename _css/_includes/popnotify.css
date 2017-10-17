@@ -1,0 +1,66 @@
+#popnotify-container {
+    display: none;
+    position: fixed;
+    width: 200px; height: 200px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 10px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: 100;
+}
+
+#popnotify-wrapper {
+    margin: 0; padding: 0;
+    position: absolute;
+    width: calc(100% - 1em); height: calc(100% - 1em);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popnotify-image {
+    display: block;
+    max-height: 80%; max-width: 80%;
+    height: auto; width: auto;
+}
+
+#popnotify-caption {
+    flex: 1;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(120, 120, 120);
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    #popnotify-container {
+        width: 150px; height: 150px;
+    }
+    
+    #popnotify-caption {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width : 490px) {
+    #popnotify-container {
+        width: 150px; height: 150px;
+    }
+    
+    #popnotify-caption {
+        font-size: 0.8em;
+    }
+}

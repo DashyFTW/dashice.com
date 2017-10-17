@@ -1,0 +1,67 @@
+.body-reader-bgcolor {
+    background-color: rgb(220, 211, 193);
+}
+
+#reader-wrapper {
+    background-color: rgb(247, 238, 218);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+}
+
+.toolbar-button {
+    background-color: transparent;
+    border: 0.1em solid rgb(165, 155, 147);
+}
+
+.toolbar-button:enabled:active {
+    background-color: rgb(229, 216, 187);
+}
+
+.toolbar-button:disabled:active {
+    background-color: transparent;
+}
+
+.toolbar-button:focus {
+    border-color: crimson;
+}
+
+.toolbar-button:disabled > span {
+    filter: opacity(0.5)!important;
+}
+
+#toolbar-prev:enabled:active > span, #toolbar-next:enabled:active > span, #toolbar-smaller:enabled:active > span, #toolbar-larger:enabled:active > span, #toolbar-print:enabled:active > span, #toolbar-close:enabled:active > span {
+    filter:brightness(55%);
+}
+
+#toolbar-prev > span {
+    filter: sepia(75%)brightness(80%);
+}
+
+#toolbar-next > span {
+    filter: sepia(75%)brightness(80%);
+}
+
+#toolbar-smaller > span {
+    filter: sepia(75%)brightness(80%);
+}
+
+#toolbar-larger > span {
+    filter: sepia(75%)brightness(80%);
+}
+
+#toolbar-print > span {
+    filter: sepia(75%)brightness(80%);
+}
+
+#toolbar-close > span {
+    filter: sepia(75%)brightness(80%);
+}
+
+#reader-heading {
+    color: rgb(63, 57, 45);
+}
+
+#reader-body {
+    color: rgb(63, 57, 45);
+}

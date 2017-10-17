@@ -1,0 +1,90 @@
+#wrapper {
+    background-color: black;
+    -webkit-box-shadow: 0px 0px 40px 10px rgba(255,255,255,0.1);
+    -moz-box-shadow: 0px 0px 40px 10px rgba(255,255,255,0.1);
+    box-shadow: 0px 0px 40px 10px rgba(255,255,255,0.1);
+}
+
+#contact-invoke {
+    color: rgb(135, 135, 135);
+}
+
+.form-section-header > h2 {
+    color: white;
+}
+
+.form-input-wrapper {
+    border: 0.25em solid rgb(25, 25, 25);
+    background-color: rgb(25, 25, 25);
+}
+
+.form-input-wrapper > label {
+    color: rgb(135, 135, 135);
+}
+
+.form-input-wrapper > label:active {
+    color: rgb(205, 205, 205);
+}
+
+.email-form-input {
+    background-color: black;
+    color: white;
+}
+
+.email-form-input:focus {
+    background-color: rgb(0, 27, 50);
+}
+
+.form-message-wrapper {
+    border: 0.25em solid rgb(25, 25, 25);
+    background-color: rgb(25, 25, 25);
+}
+
+.form-message-wrapper > label {
+    background-color: rgb(25, 25, 25);
+    color: rgb(135, 135, 135);
+}
+
+.form-message-wrapper > label:active {
+    color: rgb(205, 205, 205);
+}
+
+#message {
+    background-color: black;
+    color: white;
+}
+
+#message:focus {
+    background-color: rgb(0, 27, 50);
+}
+
+#email-form-final {
+    border-top: 1px solid rgb(95, 95, 95);
+}
+
+#form-send {
+    background-color: dodgerblue;
+    color: rgb(5, 5, 5);
+}
+
+#form-send:active {
+    background-color: rgb(74, 166, 255);
+    color: rgb(5, 5, 5);
+}
+
+#form-send:focus {
+    background-color: crimson;
+    outline: none;
+}
+
+@media (max-width : 42.5em) {
+
+}
+
+@media (max-width : 490px) {
+
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    
+}

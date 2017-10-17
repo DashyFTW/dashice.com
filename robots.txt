@@ -1,0 +1,8 @@
+User-agent: *
+
+Disallow: /_backup/
+Disallow: /_plugins/
+Disallow: /_includes/
+Disallow: /_autodiscover/
+Disallow: /_webalizer/
+Disallow: /CV.pdf

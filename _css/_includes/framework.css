@@ -1,0 +1,118 @@
+/*
+All properties inside here apply to all pages and are universal.
+*/
+
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0; margin: 0;
+    -webkit-font-smoothing: subpixel-antialiased; /*For Safari, fixes lighter fonts.*/
+    
+    overflow: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    height: 100%;
+    padding: 0; margin: 0;
+    
+    overflow: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.bodylocked {
+    position: fixed;
+    width: 100%;
+}
+
+#wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+    /*
+    This is for no_js-banner found in header.php
+    This setting is automatically removed upon
+    load with Javascript enabled
+    */
+    padding-bottom: 1.5em;
+    
+    overflow: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+#content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: auto;
+    /*min-height: calc(100vh - 2.5em);*/
+    margin-top: 2.5em;
+}
+
+.unselectable {
+    pointer-events: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.transition-in {
+    transition: 0.5s ease-in;
+}
+
+.transition-out {
+    transition: 0.5s ease-out;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+    }
+    
+	to {
+		transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotating {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 1s linear infinite;
+	-moz-animation: rotating 1s linear infinite;
+	-ms-animation: rotating 1s linear infinite;
+	-o-animation: rotating 1s linear infinite;
+	animation: rotating 1s linear infinite;
+}

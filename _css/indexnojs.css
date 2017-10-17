@@ -1,0 +1,457 @@
+/********************/
+/*GLOBAL*************/
+/********************/
+.no_js-article {
+    min-height: calc(100vh - 4em);
+    height: auto;
+}
+
+.no_js-index-link {
+    width: 25%;
+    margin: 1em 0 1em 0;
+    padding: 0.1em;
+    
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/********************/
+/*ABOUT**************/
+/********************/
+
+#no_js-about-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    height: calc(100vh - 4em);
+    
+    background-color: rgb(64, 64, 64);
+}
+
+#no_js-about-article > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+    width: auto; height: auto;
+    border-right: 0.1em solid lightgray;
+}
+
+#no_js-about-article > div:nth-child(1) > img {
+    max-width: 300px;
+    margin: 1.4em 0 1.4em 0;
+    border-radius: 1000px;
+}
+
+#no_js-about-article > div:nth-child(1) > h1 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+#no_js-about-article > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#no_js-about-article > div:nth-child(2) > div {
+    max-width: 40em; width: calc(100% - 2em);
+    max-height: calc(100% - 6em); height: auto;
+    overflow: scroll;
+    
+    background-color: #eeeeee;
+    border-radius: 15px;
+}
+
+#no_js-about-article > div:nth-child(2) > div > h2 {
+    margin: 1.2em 1em 1.2em 1em;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(64, 64, 64);
+}
+
+#no_js-about-article > div:nth-child(2) > div > p {
+    margin: 0 1em 0 1em;
+    line-height: 1.5em;
+    text-align: justify;
+    color: rgb(80, 80, 80);
+}
+
+#no_js-about-article > div:nth-child(2) > div a {
+    color: crimson;
+}
+
+#no_js-about-article > div:nth-child(2) > div a:active {
+    color: rgb(176, 16, 48);
+}
+
+#no_js-profile-comparison {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    width: 100%; height: auto;
+}
+
+#no_js-profile-comparison > div {
+    margin: 1.25em;
+    height: 150px; width: 150px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1000px;
+}
+
+#no_js-profile-comparison > div:nth-child(1) {
+    background-image: url(../_images/_index/about-young.jpg);
+}
+
+#no_js-profile-comparison > div:nth-child(2) {
+    background-image: url(../_images/_index/about-arrow-right.png);
+}
+
+#no_js-profile-comparison > div:nth-child(3) {
+    background-image: url(../_images/_index/about-old.jpg);
+}
+
+#no_js-signature {
+    margin: 2.5em 1em 2.5em 1em;
+    width: 65%; height: 0;
+    padding-top: 17.1%;
+    background-image: url(../_images/_index/about-sig.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#no_js-about-article .no_js-index-link {
+    color: rgb(64, 64, 64);
+    background-color: #eee;
+    border: 0.1em solid #eee;
+}
+
+/********************/
+/*PHOTOS*************/
+/********************/
+
+#no_js-photos-article {
+    background-color: black;
+    z-index: 1;
+}
+
+#no_js-photos-article > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#no_js-photos-article > div > div {
+    position: relative;
+    max-width: 40em; width: 100%;
+}
+
+#no_js-photos-article > div > div > img {
+    width: 100%;
+}
+
+#no_js-photos-article > div > div > h1 {
+    position: absolute;
+    width: 100%;
+    top: 50%; transform: translateY(-50%);
+    margin: 0;
+    
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+
+#no_js-photos-article > div > h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    
+    color: white;
+}
+
+#no_js-photos-article > div > p {
+    margin: 1.5em;
+    max-width: 32em; width: calc(100% - 2em);
+    
+    font-size: 1.25em;
+    text-align: justify;
+    
+    color: white;
+}
+
+#no_js-photos-article .no_js-index-link {
+    width: 20%;
+    margin: 0 0 1.5em 0;
+    color: white;
+    background-color: orangered;
+    border: 0.1em solid orangered;
+}
+
+/********************/
+/*LITERATURE*********/
+/********************/
+
+#no_js-literature-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    
+    background-image: url('../_images/_index/literature-backdrop.png');
+    background-size: contain;
+    background-color: rgb(247, 217, 176);
+}
+
+#no_js-literature-article > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 45em; width: calc(100% - 2em);
+    height: calc(100vh - 6em);
+    
+    background-color: white;
+}
+
+#no_js-literature-article > div:nth-child(1) {
+    position: absolute;
+    top: 0; height: calc(25vh - 2.5em);
+    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.30);
+    
+    z-index: 1;
+}
+
+#no_js-literature-article > div:nth-child(1) > h1 {
+    font-size: 3em; margin: 0;
+}
+
+#no_js-literature-article > div:nth-child(2) {
+    width: calc(100% - 2em);
+    
+    white-space: pre-wrap;
+    transform: scale(0.95);
+    border-radius: 15px;
+    
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
+    
+    z-index: 0;
+}
+
+#no_js-literature-article > div:nth-child(2) > p {
+    padding: 1em;
+    border-left: 0.3em solid black;
+}
+
+#no_js-literature-article .no_js-index-link {
+    position: relative;
+    top: 2em;
+    width: 32.5%;
+    margin: 0;
+    color: white;
+    background-color: black;
+    border: 0.1em solid black;
+}
+
+@media (max-width : 1206px) {
+    #no_js-profile-comparison {
+        margin: 1.25em 0 1.25em 0;
+    }
+    
+    #no_js-profile-comparison > div {
+        margin: 0 20% 0 20%;
+    }
+    
+    #no_js-profile-comparison > div:nth-child(2) {
+        background-image: url(../_images/_index/about-arrow-down.png);
+    }
+}
+
+@media (max-width : 800px) {
+    #no_js-about-article {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 1.75em;
+    }
+    
+    #no_js-about-article > div:nth-child(1) {
+        width: auto; height: auto;
+        border: none;
+    }
+    
+    #no_js-about-article > div:nth-child(1) > img {
+        max-width: 200px;
+    }
+    
+    #no_js-about-article > div:nth-child(2) {
+        margin-top: 1em;
+        padding-top: 1.75em;
+        border-top: 0.1em solid lightgray;
+    }
+}
+
+@media (max-width : 490px) {
+    .no_js-index-link {
+        font-size: 1em;
+    }
+    
+    #no_js-about-article > div:nth-child(1) > h1 {
+        font-size: 1.75em;
+    }
+    
+    #no_js-about-article > div:nth-child(2) > div > h2 {
+        margin: 1.2em 1em 1.2em 1em;
+        font-size: 1.5em;
+    }
+    
+    #no_js-signature {
+        width: 85%;
+        padding-top: 22.3%;
+    }
+    
+    #no_js-about-article .no_js-index-link {
+        width: 50%;
+    }
+    
+    #no_js-photos-article > div > div > h1 {
+        font-size: 2.5em;
+    }
+
+    #no_js-photos-article > div > h2 {
+        font-size: 1.75em;
+    }
+
+    #no_js-photos-article > div > p {
+        font-size: 1em; line-height: 1.5em;
+    }
+
+    #no_js-photos-article .no_js-index-link {
+        width: 50%;
+    }
+    
+    #no_js-literature-article > div:nth-child(1) > h1 {
+        font-size: 2.5em;
+    }
+    
+    #no_js-literature-article .no_js-index-link {
+        width: 62%;
+    }
+}
+
+@media (max-width : 350px) {
+    #no_js-literature-article > div:nth-child(1) > h1 {
+        font-size: 2em;
+    }
+    
+    #no_js-literature-article > div:nth-child(2) > p {
+        font-size: 0.85em;
+    }
+    
+    #no_js-literature-article .no_js-index-link {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px) and (orientation : landscape) {
+    .no_js-index-link {
+        font-size: 0.85em;
+    }
+    
+    #no_js-about-article > div:nth-child(1) > img {
+        margin: 1em 0 1em 0;
+        max-width: 125px;
+    }
+    
+    #no_js-about-article > div:nth-child(1) > h1 {
+        font-size: 1.75em;
+    }
+    
+    #no_js-about-article > div:nth-child(2) > div > h2 {
+        font-size: 1.5em;
+    }
+
+    #no_js-about-article > div:nth-child(2) > div > p {
+        font-size: 0.85em;
+    }
+    
+    #no_js-about-article .no_js-index-link {
+        margin-bottom: 0.5em;
+    }
+    
+    #no_js-photos-article > div > div {
+        width: 50%;
+    }
+    
+    #no_js-photos-article > div > div > h1 {
+        font-size: 2.5em;
+    }
+
+    #no_js-photos-article > div > h2 {
+        font-size: 1.5em;
+    }
+
+    #no_js-photos-article > div > p {
+        font-size: 0.85em;
+    }
+
+    #no_js-photos-article .no_js-index-link {
+        width: 40%;
+    }
+    
+    #no_js-literature-article {
+        height: 120vh;
+    }
+    
+    #no_js-literature-article > div:nth-child(1) {
+        height: calc(30vh - 2.5em);
+    }
+    
+    #no_js-literature-article > div:nth-child(2) {
+        height: 100%;
+    }
+    
+    #no_js-literature-article > div:nth-child(1) > h1 {
+        font-size: 2.5em;
+    }
+    
+    #no_js-literature-article > div:nth-child(2) > p {
+        font-size: 0.85em;
+    }
+    
+    #no_js-literature-article .no_js-index-link {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width : 414px) and (max-width : 568px) and (orientation : landscape) {
+
+}

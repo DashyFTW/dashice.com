@@ -1,0 +1,51 @@
+#subheader-wrapper {
+    background-color: black;
+    border-top-color: rgb(40, 40, 40);
+    border-bottom-color: rgb(40, 40, 40);
+    -webkit-box-shadow: 0px 20px 20px 5px rgba(255,255,255,0.04);
+    -moz-box-shadow: 0px 20px 20px 5px rgba(255,255,255,0.04);
+    box-shadow: 0px 20px 20px 5px rgba(255,255,255,0.04);
+}
+
+#subheader-form > input {
+    color: white;
+}
+
+#subheader-form > input:hover, #older > div > input:hover {
+    background-color: white;
+    color: black;
+}
+
+#subheader-form > input:focus, #older > div > input:focus {
+    background-color: dodgerblue;
+    color: black;
+}
+
+#subheader-form > input:active, #older > div > input:active {
+    background-color: rgb(225, 225, 225);
+    color: black;
+}
+
+#older {
+    background-image: url(../../../_images/_header/dots-white.png);
+}
+
+#older:hover {
+    background-image: url(../../../_images/_header/dots.png);
+    background-color: white;
+}
+
+#older:focus {
+    background-image: url(../../../_images/_header/dots.png);
+    background-color: dodgerblue;
+}
+
+#older > div {
+    background-color: black;
+    border-left-color: rgb(40, 40, 40);
+    border-bottom-color: rgb(40, 40, 40);
+}
+
+#older > div > input {
+    color: white;
+}
